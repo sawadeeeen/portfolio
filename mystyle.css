@@ -1,13 +1,23 @@
+
 body{
-background-image:url('bg.jpg');
+background-image:url('pic/bg.jpg');
 background-attachment: fixed;
 }
-.photo{
-  width: 100%;
+
+.name{
+    position: relative;
+}
+
+.text1{
+  /*position: absolute;*/
+  top:100px;
+  left: 100px;
+  color: black;
+}
+
+.pic1{
+  width: 800px;
   margin: 0;
   padding: 0;
-  position: relative;
-}
-.disk1 img{
-  width:100%;
+
 }
