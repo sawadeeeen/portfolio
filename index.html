@@ -5,40 +5,93 @@
   <meta charset = "utf-8">
   <meta name = "description" content = "さわやけいいちろう">
   <title>keichiro sawaya</title>
-  <link rel="stylesheet" href="mystyle.css">
-  <script type = "text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!-- <link rel="stylesheet" href="mystyle.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+
+  <!-- <script type = "text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- 回転js -->
   <script type = "text/javascript" src="js/jQueryRotate.js"></script>
   <script type = "text/javascript">
   $(function(){
     $("#img").rotate(45);
   });
-  var angle = 0;　/* 一定の速  度（ゆっくり）で回転し続ける */
+  var angle = 0;/* 一定の速度で回転し続ける */
   setInterval(function(){
     angle+=50;
   $("#img").rotate(angle);
 },50);
   </script>
+  <!-- 1ページスクロールjs -->
+  <script type="text/javascript"
+  src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#fullpage').fullpage();
+  });
+  </script>
+
+
+  <!-- font -->
+  <style type="text/css">
+    <!--
+    .pop {font-family:HG創英角ﾎﾟｯﾌﾟ体;}
+    -->
+  </style>
+
 </head>
 
 <body>
-  <div class="name0">
-    <div class = "pic1">
-      <img src ="pic/disk4.png" alt="フリスビー" width= "100px" height="100px"id="img">
+  <div id="fullpage">
+    <div class="section" align="center">
+      <div class = "pic1">
+        <Marquee direction="right" behavior="alternate" width="300" scrollamount="20 "truespeed>
+          <img src ="pic/disk4.png" alt="フリスビー" width= "120px" height="120px"id="img"></Marquee>
+      </div>
+      <div class = "name">
+        <p><span class="pop">KEICHIRO SAWAYA</span></p>
+      </div>
     </div>
-    <div class = "name1">
-      <p>keichiro sawaya</p>
-    </div>
-  </div>
 
-  <div class="profile">
-    <div class = "text1">
-      <h1> プロフィール</h1>
-      <h2>法政大学情報科学部コンピュータ科学科所属。
-         研究テーマはディープラーニング手法の高速化を行おうと考えています。
-         趣味はスポーツで、大学では特にアルティメットというフリスビーを使ったスポーツに熱を入れていました。
-      </h2>
+    <div class="section">
+      <div class = "text1" align="center">
+        <pre><span class="pop">
+  プロフィール
+
+
+
+  1995年生まれ,埼玉県出身
+
+    法政大学情報科学部コンピュータ科学科所属
+
+    研究テーマはディープラーニング手法の高速化を行おうと考えています。
+
+    趣味はスポーツで、大学では特にアルティメットという
+    フリスビーを使ったスポーツに熱中していました。</span></pre>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="project1">
+        <a href="./link.html">
+          <img src="pic/project1.png" alt="成果物１"  onmouseover="this.src='pic/project2.png'"
+          onmouseout="this.src='pic/project1.png'">
+        </a>
+        </div>
+      <div class = "text2">
+        <p><span class="pop" >自己組織化写像</span></p>
+        <pre><span class="pop">
+
+  大学の研究の一貫で行ったもので
+
+  このプログラムは色彩を分類をするもので
+
+  ランダムな色を与えてあげると
+
+  自ら同じ色に分類されていくというものです。
+        </span>
+        </pre>
     </div>
   </div>
 </body>
-
 </html>
