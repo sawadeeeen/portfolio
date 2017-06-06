@@ -258,9 +258,9 @@ html.fp-enabled,
 }
 
 .project1{
-  position:absolute
-  top:100px;
-  left:200px;
+  position:absolute;
+  top:0px;
+  left:0px
 
   }
 
@@ -285,4 +285,34 @@ html.fp-enabled,
   font-size: 18px;
   top:100px;
   left:0px;
+}
+
+.project2{
+  position:absolute;
+  top:150px;
+  left:100px;
+
+}
+
+.text3{
+  position:absolute;
+  top:100px;
+  left:800px;
+  background-color: white;
+  padding:0px;
+  margin:0px;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+}
+.text3 p{
+  position: absolute;
+  font-size: 30px;
+  left:130px;
+}
+.text3 pre{
+  position: absolute;
+  font-size: 18px;
+  top:100px;
+  left:10px;
 }
