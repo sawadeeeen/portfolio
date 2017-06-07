@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang = "ja">
-
 <head>
   <meta charset = "utf-8">
   <meta name = "description" content = "さわやけいいちろう">
+  <meta name = "viewport" content="width=device-width,initial-scale=1.0"
   <title>keichiro sawaya</title>
   <!-- <link rel="stylesheet" href="mystyle.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" type="text/css" media="(min-width:640px)" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" type="text/css" media="(max-width:640px)" href="css/style_mobile.css">
 
   <!-- <script type = "text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -44,10 +45,8 @@
 <body>
   <div id="fullpage">
     <div class="section" align="center">
-      <div class = "pic1">
         <Marquee direction="right" behavior="alternate" width="300" scrollamount="20 "truespeed>
-          <img src ="pic/disk4.png" alt="フリスビー" width= "120px" height="120px"id="img"></Marquee>
-      </div>
+        <img src ="pic/disk4.png" alt="フリスビー"id="img" class="pic1"></Marquee>
       <div class = "name">
         <p><span class="pop">KEICHIRO SAWAYA</span></p>
       </div>
@@ -55,19 +54,23 @@
 
     <div class="section">
       <div class = "text1" align="center">
+        <p><span class="pop">プロフィール</span></p>
         <pre><span class="pop">
-  プロフィール
 
 
 
-  1995年生まれ,埼玉県出身
+    1995年生まれ,埼玉県出身
 
     法政大学情報科学部コンピュータ科学科所属
 
-    研究テーマはディープラーニング手法の高速化を行おうと考えています。
+    研究テーマはディープラーニング手法の一部を変え、
+    計算時間を短縮することを行う予定です。
 
     趣味はスポーツで、大学では特にアルティメットという
-    フリスビーを使ったスポーツに熱中していました。</span></pre>
+    フリスビーを使ったスポーツに熱中していました。
+
+    ただいまpython勉強中です。
+      </span></pre>
       </div>
     </div>
 
@@ -75,20 +78,20 @@
       <div class="project1">
         <a href="./link.html">
           <img src="pic/project1.png" alt="成果物１"  onmouseover="this.src='pic/project2.png'"
-          onmouseout="this.src='pic/project1.png'">
+          onmouseout="this.sr c='pic/project1.png'">
         </a>
         </div>
       <div class = "text2">
         <p><span class="pop" >自己組織化写像</span></p>
         <pre><span class="pop">
 
-  大学の研究の一貫で行ったもので
+  　大学の研究の一貫で行ったもの。
 
-  このプログラムは色彩を分類をするもので
+  このプログラムは色彩を分類してくれるもので
 
-  ランダムな色を与えてあげると
+  ランダムに色を与えてあげると自ら同じ色に
 
-  自ら同じ色に分類されていくというものです。
+  分類されていく教師なし学習です。
         </span>
         </pre>
     </div>
@@ -102,17 +105,17 @@
     <div class = "text3">
       <p><span class="pop" >twitterの模倣</span></p>
       <pre><span class="pop">
-　最近作成したもので、一カ月の短期スクールに通い
+　　　　　今年の４月ごろに作成したもので、
 
-　作成しました。
+　　一カ月の短期スクールに通い作成しました。
 
-　機能としては、ユーザごとにつぶやくことができる
+　　機能としては、ユーザごとにつぶやくことができる
 
-　というようなtwitterの模倣で実用性はないですが、
+　　というようなtwitterの模倣で実用性はないですが、
 
-　この経験を活かし、部活動で運用しているブログに
+　　この経験を活かし、部活動で運用しているブログに
 
-　応用していきたいと考えています。
+　　 応用していきたいと考えています。
       </span>
       </pre>
   </div>

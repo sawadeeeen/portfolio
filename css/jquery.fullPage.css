@@ -6,6 +6,8 @@
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
 
+@media print,screen and (min-width: 640px){
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -235,6 +237,11 @@ html.fp-enabled,
 .section{
   position:relative;
 }
+
+.pic1{
+  width: 120px;
+  height: 120px;
+}
 .name{
   position:absolute;
   top:250px;
@@ -244,7 +251,9 @@ html.fp-enabled,
   font-family: sans-serif;
 }
 .text1{
-  font-size: 150%;
+  position: absolute;
+  top:5%;
+  left:0%;
   color: black;
   background-color: white;
   padding: 0;
@@ -254,7 +263,21 @@ html.fp-enabled,
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
-  height: 400px;
+  height: 80%;
+  width: 100%;
+}
+
+.text1 p{
+  position: absolute;
+  font-size:300%;
+  left:40%;
+}
+
+.text1 pre{
+  position: absolute;
+  font-size: 150%;
+  top:10%;
+  left:24%;
 }
 
 .project1{
@@ -315,4 +338,5 @@ html.fp-enabled,
   font-size: 18px;
   top:100px;
   left:10px;
+}
 }
